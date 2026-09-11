@@ -35,8 +35,10 @@ tests:
       imports:
         - executorlib
       pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
-      python_version: ${{ python_min }}.*
 about:
   summary: Scale serial and MPI-parallel python functions over hundreds of compute nodes all from within a jupyter notebook or serial python process.
   license: BSD-3-Clause
